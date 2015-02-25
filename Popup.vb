@@ -53,19 +53,29 @@ Class PopupNotification
 
         Select Case NotificationType
             Case Type.Notice
-                NotificationText = "NOTICE" : BackColor = Color.FromArgb(227, 247, 252) : BorderColor = Color.FromArgb(142, 217, 246)
+                NotificationText = "NOTICE"
+                BackColor = Color.FromArgb(227, 247, 252)
+                BorderColor = Color.FromArgb(142, 217, 246)
                 Image = Image.FromStream(New IO.MemoryStream(Convert.FromBase64String(Comment)))
             Case Type.Success
-                NotificationText = "SUCCESS" : BackColor = Color.FromArgb(233, 255, 217) : BorderColor = Color.FromArgb(166, 202, 138)
+                NotificationText = "SUCCESS"
+                BackColor = Color.FromArgb(233, 255, 217)
+                BorderColor = Color.FromArgb(166, 202, 138)
                 Image = Image.FromStream(New IO.MemoryStream(Convert.FromBase64String(Accept)))
             Case Type.Warning
-                NotificationText = "WARNING" : BackColor = Color.FromArgb(255, 248, 196) : BorderColor = Color.FromArgb(242, 199, 121)
+                NotificationText = "WARNING"
+                BackColor = Color.FromArgb(255, 248, 196)
+                BorderColor = Color.FromArgb(242, 199, 121)
                 Image = Image.FromStream(New IO.MemoryStream(Convert.FromBase64String(Exclamation)))
             Case Type.Error
-                NotificationText = "ERROR" : BackColor = Color.FromArgb(255, 236, 236) : BorderColor = Color.FromArgb(245, 172, 166)
+                NotificationText = "ERROR"
+                BackColor = Color.FromArgb(255, 236, 236)
+                BorderColor = Color.FromArgb(245, 172, 166)
                 Image = Image.FromStream(New IO.MemoryStream(Convert.FromBase64String([Error])))
             Case Type.Help
-                NotificationText = "HELP" : BackColor = Color.FromArgb(230, 230, 230) : BorderColor = Color.FromArgb(180, 180, 180)
+                NotificationText = "HELP"
+                BackColor = Color.FromArgb(230, 230, 230)
+                BorderColor = Color.FromArgb(180, 180, 180)
                 Image = Image.FromStream(New IO.MemoryStream(Convert.FromBase64String(Help)))
         End Select
 
